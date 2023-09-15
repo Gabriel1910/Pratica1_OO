@@ -1,0 +1,45 @@
+public class Carro {
+    private String marca;
+    private String modelo;
+    private int ano;
+    private double preco;
+    private String cor;
+
+    public Carro(String marca, String modelo, int ano, double preco, String cor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.preco = preco;
+        this.cor = cor;
+    }
+}
+public class Cliente {
+    private String nome;
+    private String cpf;
+    private String endereco;
+    private String telefone;
+    private String email;
+
+    public Cliente(String nome, String cpf, String endereco, String telefone, String email) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+    }
+}
+public class Transacao {
+    private Cliente comprador;
+    private Cliente vendedor;
+    private Carro carroVendido;
+    private double valor;
+    private String data;
+
+    public Transacao(Cliente comprador, Cliente vendedor, Carro carroVendido, double valor, String data) {
+        this.comprador = comprador;
+        this.vendedor = vendedor;
+        this.carroVendido = carroVendido;
+        this.valor = valor;
+        this.data = data;
+    }
+}
